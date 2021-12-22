@@ -1,5 +1,5 @@
 ;calculator.vspl by DiamondCoder1000
-#include "A:/lib/libv
+#include "/lib/
 function calculator(){
   print("calculator");
   println();
