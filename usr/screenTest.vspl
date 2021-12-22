@@ -1,4 +1,4 @@
-#include "A:/lib/libv"
+#include "/lib/"
 function screenTest(){
   drawCircle(200, 200, 40)
   drawLine(10,10,70,10);
