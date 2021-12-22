@@ -1,4 +1,4 @@
-#include "A:/lib/libv"
+#include "/lib/"
 
 function animation(){
   x = 0
