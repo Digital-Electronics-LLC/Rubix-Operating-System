@@ -1,1 +1,1 @@
-%include /src/Crylix-main/kernel/sys_calls/
+%include A:/src/Crylix-main/kernel/sys_calls/
