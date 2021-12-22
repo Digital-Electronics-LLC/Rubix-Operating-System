@@ -1,4 +1,4 @@
-#include "A:/sys/libvspl.vspl"
+#include "/lib/"
 
 function exec(int block){
   malloc(16348);
