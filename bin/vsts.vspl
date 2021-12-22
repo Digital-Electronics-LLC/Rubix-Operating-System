@@ -1,0 +1,76 @@
+//VSTS(very simple text shell) by DiamondCoder1000
+
+string version = "CrylonOS 0.1-beta11";
+
+//the includes
+
+#include "A:/bin/user/user.asm"
+#include "A:/bin/exit/exit.asm"
+#include "A:/bin/ls/ls.asm"
+#include "A:/bin/help/help.asm"
+#include "A:/bin/open/open.asm"
+#include "A:/bin/ver/ver.asm"
+#include "A:/bin/about/about.asm"
+#include "A:/bin/killall/killall.vspl"
+#include "A:/lib/libv"
+#include "A:/sys/process.vspl"
+
+
+//init
+function init()
+{
+  print(thingy);
+  jump(main);
+}
+string ERROR = "Error: command or file not found";
+string prompt = "shell#";
+string x;
+
+function main()
+{
+  print(prompt);
+  input_string();
+  store(A, x);
+  
+  if (x == "exit"){
+    exit();
+  }
+  else if (x == "user"){
+    user();
+    println();
+  }
+  else if (x == "help"){
+    help();
+    println();
+  }
+  else if (x == "ver"){
+    ver();
+    println();
+  }
+  else if (x == "killall"){
+    killall();
+  }
+  else if (x == "testprogram"){
+    exec(0x300001);
+    doneExec();
+  }
+  else if (x == "calculator"){
+    exec(0x304001);
+    doneExec();
+  }
+  else if (x == "graphicsTest"){
+    exec(0x308001);
+    doneExec();
+  }
+  else if (x == "animation"){
+    exec(0x30C001);
+    doneExec();
+  }
+  else if (x == "apps"){
+    print("graphicsTest, calculator, testprogram, animation")
+  }
+  else {
+    print(ERROR);
+  }
+
+  

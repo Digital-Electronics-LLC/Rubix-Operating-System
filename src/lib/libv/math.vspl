@@ -1,0 +1,61 @@
+//The math library of the official vspl library
+function max(int a, int b)
+{
+  if (a > b)
+  {
+    return(a)
+  }
+  else
+  {
+    return(b)
+  }
+}
+
+function min(int a, int b)
+{
+  if (a < b)
+  {
+    return(a)
+  }
+  else
+  {
+    return(b)
+  }
+}
+
+function mult(a, b){
+  uint x = 0;
+  add(a, x);
+  dec(b);
+  if (b == y){
+    return x;
+  }
+  else{
+    jump(28);
+  }
+}
+function sqrt(uint x){
+  uint y = 0;
+  bool done = false;
+  while (true){
+    if (y*y == x){
+      return(y);
+    }
+    else{
+      y++;
+    }
+  }
+}
+
+function square(int x){
+  return(mult(x, x));
+}
+
+function abs(int x){
+  if (x > 0){
+    return(x);
+  }
+  else if (x < 0){
+    return(-x);
+  }
+}

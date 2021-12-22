@@ -1,0 +1,11 @@
+//the keyboard library of the official vspl library
+
+function input_string()
+{
+  xor(A, A); 
+  loadi(B, 1);
+  ind(B, A);
+  xor (B, B);
+  outa(B);
+  return(A);
+}

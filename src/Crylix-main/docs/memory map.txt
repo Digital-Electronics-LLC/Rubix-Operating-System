@@ -1,0 +1,32 @@
+RAM(8 Megawords)
+
+0x000000 - 0x00ffff: kernel space
+0x010000 - 0x410000: heap
+0x410001 - 0x430001: screen
+0x430002 - 0x800000: var space for compiler
+
+stack, which is part of RAM(8 Megawords)
+
+0x800001 - 0xffffff: stack
+
+Flash ROM(8 Megawords)
+Note: the FLash ROM is divided into 1024 16 kiloword large "blocks" by vsfs
+the Flash ROM is divided into directories A: and B:, which are both 8 Megawords in size
+
+file extensions:
+
+.pic (picture)
+.txt (text)
+.com (compiled)
+.asm (assembly)
+.vspl (vspl file)
+.bas (BASIC file)
+
+A:\ - 512 blocks
+0x000000 - 0x100000: where the OS is stored
+0x100001 - 0x300000: system programs(assemblers, compilers)
+0x300001 - 0x700000: user programs(text editors, calculators)
+0x700001 - 0x800000: extra space for programs
+
+B:\ - 512 blocks
+0x800001 - 0xffffff: your own files

@@ -1,0 +1,52 @@
+//the memory library of the official vspl library
+
+//for malloc
+uint heapbase
+uint freelist = 65536;
+
+#include "A:/src/Crylix-main/kernel/debug.vspl"
+#include "A:/src/Crylix-main/kernel/libs/libvspl
+
+function peek(int address)
+{
+  save(A, address[address]);
+  return(A);
+  xor(A, A);
+}
+
+function poke(uint address, uint value)
+{
+  savei(A, value);
+  store(A, address);
+  xor(A, A);
+}
+
+
+function malloc(uint size)
+{
+  if (size <== 0){
+    error(NULL); //imma change this later
+    //right now, it's NULL, which is a value
+    //so, error(NULL); prints out nothing
+  }
+  
+  if (freelist == 4194304){
+    print("not enough memory! Kill some processes to free memory. or use the 'killall' command to kill all processes");
+    return;
+  }
+  
+  uint pointer = freelist;
+  save(A, pointer);
+  freeList = freelist + size;
+  return;
+}
+
+function free(uint size)
+{
+  freelist = freelist - size;
+}
+
+function freeAll()
+{
+  freelist = 65536;
+}

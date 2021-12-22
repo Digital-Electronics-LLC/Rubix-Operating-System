@@ -1,0 +1,6 @@
+exit - exits the system
+ls - lists the directories
+cd - change directory
+ver - prints the cureent version
+about - tells you about the OS
+open - opens a file
