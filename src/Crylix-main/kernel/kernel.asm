@@ -19,16 +19,16 @@
 ;|                                                                 |
 ;+-----------------------------------------------------------------+
 
-%include A:/src/Crylix-main/kernel/sys_calls/end.asm
-%include A:/src/Crylix-main/kernel/sys_calls/input_char.asm
-%include A:/src/Crylix-main/kernel/sys_calls/mod.asm
-%include A:/src/Crylix-main/kernel/sys_calls/mult.asm
-%include A:/src/Crylix-main/kernel/sys_calls/panic.asm
-%include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
-%include A:/src/Crylix-main/kernel/sys_calls/print_hex.asm
-%include A:/src/Crylix-main/kernel/sys_calls/readSSD.asm
-%include A:/src/Crylix-main/kernel/sys_calls/writeSSD.asm
-%include A:/src/Crylix-main/kernel/sys_calls/print.asm; yesssssssss finally!!!
+%include /src/Crylix-main/kernel/sys_calls/end.asm
+%include /src/Crylix-main/kernel/sys_calls/input_char.asm
+%include /src/Crylix-main/kernel/sys_calls/mod.asm
+%include /src/Crylix-main/kernel/sys_calls/mult.asm
+%include /src/Crylix-main/kernel/sys_calls/panic.asm
+%include /src/Crylix-main/kernel/sys_calls/print_char.asm
+%include /src/Crylix-main/kernel/sys_calls/print_hex.asm
+%include /src/Crylix-main/kernel/sys_calls/readSSD.asm
+%include /src/Crylix-main/kernel/sys_calls/writeSSD.asm
+%include /src/Crylix-main/kernel/sys_calls/print.asm; yesssssssss finally!!!
 
 ;+--------------------------+
 ;|                          |
