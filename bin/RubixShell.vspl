@@ -4,16 +4,16 @@ string version = "CrylonOS 0.1-beta11";
 
 //the includes
 
-#include "A:/bin/user/user.asm"
-#include "A:/bin/exit/exit.asm"
-#include "A:/bin/ls/ls.asm"
-#include "A:/bin/help/help.asm"
-#include "A:/bin/open/open.asm"
-#include "A:/bin/ver/ver.asm"
-#include "A:/bin/about/about.asm"
-#include "A:/bin/killall/killall.vspl"
-#include "A:/lib/libv"
-#include "A:/sys/process.vspl"
+#include "/bin/user/user.asm"
+#include "/bin/exit/exit.asm"
+#include "/bin/ls/ls.asm"
+#include "/bin/help/help.asm"
+#include "/bin/open/open.asm"
+#include "/bin/ver/ver.asm"
+#include "/bin/about/about.asm"
+#include "/bin/killall/killall.vspl"
+#include "/lib"
+#include "/sys/process.vspl"
 
 
 //init
