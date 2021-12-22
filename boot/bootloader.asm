@@ -13,7 +13,7 @@ print_string:
     pop B
     ret
 
-loadi A, "Booting CrylonOS..."
+loadi A, "Booting Rubix..."
 call print_string
 
 xor A, A
